@@ -6,12 +6,12 @@ import LogOutContainer from "./LogOutContainer";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-  const { toggoleSideBar } = useDashboardContext();
+  const { toggleSidebar } = useDashboardContext();
 
   return (
     <Wrapper>
       <div className="nav-center">
-        <button type="button" className="toggle-btn" onClick={toggoleSideBar}>
+        <button type="button" className="toggle-btn" onClick={toggleSidebar}>
           <FaAlignLeft />
         </button>
         <div>

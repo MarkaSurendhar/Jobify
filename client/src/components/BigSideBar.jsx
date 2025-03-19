@@ -4,12 +4,12 @@ import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
 const BigSideBar = () => {
-  const { showSideBar } = useDashboardContext();
+  const { showSidebar } = useDashboardContext();
   return (
     <Wrapper>
       <div
         className={
-          showSideBar ? "sidebar-container " : "sidebar-container show-sidebar"
+          showSidebar ? "sidebar-container " : "sidebar-container show-sidebar"
         }
       >
         <div className="content">

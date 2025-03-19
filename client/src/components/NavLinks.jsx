@@ -3,7 +3,7 @@ import { useDashboardContext } from "../pages/DashboardLayout";
 import links from "../utils/Links";
 
 const NavLinks = ({ isBigSideBar }) => {
-  const { toggoleSideBar, user } = useDashboardContext();
+  const { toggleSidebar, user } = useDashboardContext();
 
   return (
     <div className="nav-links">
@@ -15,7 +15,7 @@ const NavLinks = ({ isBigSideBar }) => {
             to={path}
             key={text}
             className="nav-link"
-            onClick={isBigSideBar ? null : toggoleSideBar}
+            onClick={isBigSideBar ? null : toggleSidebar}
             end
           >
             <span className="icon">{icon}</span>

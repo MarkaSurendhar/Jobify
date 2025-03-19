@@ -5,17 +5,17 @@ import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
 const SmallSideBar = () => {
-  const { showSideBar, toggoleSideBar } = useDashboardContext();
+  const { showSidebar, toggleSidebar } = useDashboardContext();
 
   return (
     <Wrapper>
       <div
         className={
-          showSideBar ? "sidebar-container show-sidebar" : "sidebar-container"
+          showSidebar ? "sidebar-container show-sidebar" : "sidebar-container"
         }
       >
         <div className="content">
-          <button className="close-btn" onClick={toggoleSideBar}>
+          <button className="close-btn" onClick={toggleSidebar}>
             <FaTimes />
           </button>
           <header>
